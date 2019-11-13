@@ -7,7 +7,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="LICENSE.txt">
+    <None Include="..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\LICENSE.txt">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
@@ -18,10 +22,17 @@
     <Version>0.0.1</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Description>The DotEther package allows easy integration with Ethereum blockchain, your application can create accounts, transfer funds and get balance using U.S. dollar as the basis of calculation.</Description>
-    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <Description>The DotEther package allows easy integration with Ethereum blockchain, your application can create accounts, transfer funds and get balance using U.S. dollar as the basis of calculation.</Description>    
     <PackageProjectUrl>https://github.com/openponce/DotEther</PackageProjectUrl>
-    <PackageIconUrl>https://ethereum.org/favicon.png</PackageIconUrl>
+    <PackageIconUrl></PackageIconUrl>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+    <Copyright>DotEther</Copyright>
+    <NeutralLanguage>en-US</NeutralLanguage>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>true</Optimize>
   </PropertyGroup>
 
 </Project>
